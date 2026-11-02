@@ -1,0 +1,21 @@
+[Desktop Entry]
+Type=Application
+Name=Kocaeli Ulaşım
+GenericName=Toplu taşıma
+Comment=Yakındaki duraklar, canlı otobüs konumları, hat saatleri ve varış takibi
+Exec=@CMAKE_INSTALL_FULL_BINDIR@/kocaeli-ulasim
+Icon=dev.enaimami.KocaeliUlasim
+Terminal=false
+Categories=Utility;Maps;Qt;KDE;
+Keywords=otobüs;durak;hat;tramvay;kentkart;kocaeli;izmit;bus;transit;
+StartupWMClass=kocaeli-ulasim
+SingleMainWindow=true
+Actions=Map;Trackings;
+
+[Desktop Action Map]
+Name=Harita
+Exec=@CMAKE_INSTALL_FULL_BINDIR@/kocaeli-ulasim --sayfa harita
+
+[Desktop Action Trackings]
+Name=Takipler
+Exec=@CMAKE_INSTALL_FULL_BINDIR@/kocaeli-ulasim --sayfa takipler
